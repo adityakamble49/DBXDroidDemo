@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/V_ET_StudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="@string/student_id"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/V_ET_StudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/V_ET_StudentID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/student_name" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/V_ET_StudentDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/V_ET_StudentName"
+        android:layout_below="@+id/V_ET_StudentName"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/student_dept" />
+    
+    
+   <TextView
+      android:id="@+id/V_TV_Results"
+      android:layout_width="wrap_content"
+      android:layout_below="@+id/V_ET_StudentDept"
+      android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/V_BT_AddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/V_BT_ViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/view_all" />
+
+    <Button
+        android:id="@+id/V_BT_ResetFields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reset_fields" />
+
+
+
+</RelativeLayout>
